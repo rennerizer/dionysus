@@ -1,14 +1,11 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
 using System.Text.Json.Serialization;
 
-namespace WorldCities.Data.Models
+namespace WorldCities.Data
 {
-    public class Country
+    public class CountryDTO
     {
-        [Key]
-        [Required]
         public int Id { get; set; }
 
         public string Name { get; set; }
@@ -19,6 +16,8 @@ namespace WorldCities.Data.Models
         [JsonPropertyName("iso3")]
         public string ISO3 { get; set; }
 
-        public virtual List<City> Cities { get; set; }
+        public int TotCities { get; set; }
+
+        public CountryDTO() { }
     }
 }
