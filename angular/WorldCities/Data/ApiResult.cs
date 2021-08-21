@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.Linq;
 using System.Linq.Dynamic.Core;
 using System.Reflection;
@@ -82,6 +83,13 @@ namespace WorldCities.Data
             source = source
                 .Skip(pageIndex * pageSize)
                 .Take(pageSize);
+
+#if DEBUG
+            {
+                var sql = source.ToSql();
+                Debug.WriteLine(sql);
+            }
+#endif
 
             var data = await source.ToListAsync();
 
