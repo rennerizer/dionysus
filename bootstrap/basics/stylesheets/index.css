@@ -1,0 +1,23 @@
+.container {
+  background-color: #8dc5cc;
+}
+
+.container-fluid {
+  background-color: #aaad21;
+}
+
+.container .row:nth-of-type(odd) div {
+  background-color: #4e9013;
+  padding: 10px 0;
+  border: 1px solid green;
+  color: white;
+  text-align: center;
+}
+
+.container .row:nth-of-type(even) div {
+  background-color: #902e07;
+  padding: 10px 0;
+  border: 1px solid #441180;
+  color: white;
+  text-align: center;
+}
