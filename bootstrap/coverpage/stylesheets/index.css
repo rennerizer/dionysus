@@ -1,0 +1,70 @@
+html {
+  height: 100%;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  position: relative;
+  min-height: 100%;
+  background-color: #2b542c;
+  background-image: url("images/Prague_czech_republic.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: left top;
+  background-size: 100% 100%;
+  z-index: 0;
+  color: white;
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+#cover {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+#navigation-bar-container {
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  #navigation-bar-container {
+    width: 50%;
+  }
+}
+
+#navigation-bar-container a.navbar-brand,
+#navbar ul a {
+  font-weight: 900;
+}
+
+#navigation-bar-container a.navbar-brand {
+  font-size: 1.6rem;
+}
+
+#navbar ul a {
+  font-size: 1.2rem;
+}
+
+#center-content {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+}
+
+#footer-content {
+  position: absolute;
+  bottom: 20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
