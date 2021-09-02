@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS -->
+  <link 
+    rel="stylesheet" 
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" 
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
+    crossorigin="anonymous">
+
+  <!-- Custom CSS -->
+<link 
+  rel="stylesheet"
+  href="stylesheets/index.css"
+  type="text/css">
+
+  <title>Simple Form</title>
+</head>
+
+<body>
+
+  <div id="main-container" class="container">
+    <div class="row">
+      <div class="col-12 col-lg-6">
+        <!-- left column -->
+        <h3>Sign In</h3>
+        <p>Sign in today for better experience.</p>
+        <form>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter email" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" placeholder="Password" class="form-control">
+          </div>
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="form-check">
+              <input type="checkbox" class="form-check-input" id="remember-me-checkbox">
+              <label class="form-check-label" for="remember-me-checkbox">
+                Remember Me</label>
+            </div>
+            <button class="btn btn-sm btn-primary" type="submit">
+              <strong>Log in</strong>
+            </button>
+          </div>
+        </form>
+      </div> 
+      <div class="col-12 col-lg-6">
+        <!-- right column -->
+        <h3>Sign In</h3>
+        <p>Sign in today for better experience.</p>
+        <form>
+          <div class="form-group row">
+            <label class="col-lg-2 col-form-label" for="email2">Email</label>
+            <div class="col-lg-10">
+              <input type="email" placeholder="Email" class="form-control" id="email2">
+              <small class="form-text text-muted">Example block-level help text
+                here.</small>
+            </div>
+          </div>
+          <div class="form-group row">
+            <label class="col-lg-2 col-form-label" for="password2">
+              Password</label>
+            <div class="col-lg-10">
+              <input type="password" placeholder="Password" class="form-control" id="password2">
+            </div>
+          </div>
+          <div class="form-group row justify-content-end">
+            <div class="col-lg-10">
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="remember-me-checkbox-2">
+                <label class="form-check-label" for="remember-me-checkbox-2">
+                  Remember Me</label>
+              </div>
+            </div>
+          </div>
+          <div class="form-group row justify-content-end">
+            <div class="col-lg-10">
+              <button class="btn btn-sm btn-secondary" type="submit">Sign in
+              </button>
+            </div>
+          </div>
+        </form>
+      </div> 
+    </div>
+
+    <div id="inline-form-container">
+      <hr class="m-4">
+      <form class="form-inline">
+        <div class="form-group mr-sm-2">
+          <label for="email3" class="mr-sm-2">Email address</label>
+          <input type="email" placeholder="Enter email" id="email3" class="form-control">
+        </div>
+        <div class="form-group mr-sm-2">
+          <label for="password3" class="mr-sm-2">Password</label>
+          <input type="password" placeholder="Password" id="password3" class="form-control">
+        </div>
+        <div class="form-check mr-sm-2">
+          <input type="checkbox" id="checkbox1" class="form-check-input">
+          <label for="checkbox1" class="form-check-label">
+            Remember me
+          </label>
+        </div>
+        <button class="btn btn-primary" type="submit">Sign in</button>
+      </form>
+    </div>
+
+    <h3 class="mt-4">Other Form Elements</h3>
+    <hr class="my-4">
+    <form>
+      <div>
+        <em>Help Text</em>
+        <hr class="my-3">
+      </div>
+      <div class="form-group row">
+        <label for="help-text" class="col-lg-2 col-form-label">VAT number
+        </label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="help-text" placeholder="Key in your VAT number" />
+          <small class="form-text text-muted">Give your company VAT
+            number. Enter the VIES VAT number with the two char prefix
+            indicating your country.</small>
+        </div>
+      </div>
+      <div>
+        <em>Readonly Plain Text</em>
+        <hr class="my-3">
+      </div>
+      <div class="form-group row">
+        <label class="col-sm-2 col-form-label" for="readonly-email">Email:</label>
+        <div class="col-sm-10">
+          <input type="text" readonly class="form-control-plaintext" id="readonly-email" value="foo@bar.com">
+        </div>
+      </div>
+      <div>
+        <em>Select Boxes</em>
+        <hr class="my-3">
+      </div>
+      <div class="form-group row">
+        <label class="col-lg-2 col-form-label" for="select-1">Single</label>
+        <div class="col-lg-10">
+          <select class="form-control" name="account" id="select-1">
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+            <option>option 4</option>
+          </select>
+        </div>
+      </div>
+      <div class="form-group row flex-justify-end">
+        <label class="col-lg-2 col-form-label" for="select-2">Multiple</label>
+        <div class="col-lg-10">
+          <select class="form-control" multiple="multiple" id="select-2">
+            <option>option 1</option>
+            <option>option 2</option>
+            <option>option 3</option>
+            <option>option 4</option>
+          </select>
+        </div>
+      </div>
+      <div>
+        <em>Input Validation</em>
+        <hr class="my-4">
+      </div>
+      <div class="form-group row">
+        <label class="col-lg-2 col-form-label" for="valid-input">
+          Email
+        </label>
+        <div class="col-lg-10">
+          <input type="email" class="form-control is-valid" id="valid-input" placeholder="Your username" value="foo@bar.com" required />
+          <div class="valid-feedback">
+            Nice!
+          </div>
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-lg-2 col-form-label" for="invalid-input">
+          Password
+        </label>
+        <div class="col-lg-10">
+          <input type="password" class="form-control is-invalid" id="invalid-input" placeholder="Your password" required>
+          <div class="invalid-feedback">
+            You have to give your password
+          </div>
+        </div>
+      </div>
+      <div>
+        <em>Size of Input Controls</em>
+        <hr class="my-4">
+      </div>
+      <div class="form-group row">
+        <label class="col-lg-2 col-form-label" for="large-size-input">
+          Large
+        </label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control form-control-lg" id="large-size-input" />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-lg-2 col-form-label" for="default-size-input">
+          Default
+        </label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control" id="default-size-input" />
+        </div>
+      </div>
+      <div class="form-group row">
+        <label class="col-lg-2 col-form-label" for="small-size-input">
+          Small
+        </label>
+        <div class="col-lg-10">
+          <input type="text" class="form-control form-control-sm" id="small-size-input" />
+        </div>
+      </div>
+      <div>
+        <em>Input Groups</em>
+        <hr class="my-4">
+      </div>
+      <div class="row justify-content-end" id="input-groups-container">
+        <div class="col-lg-10">
+          <div class="input-group">
+            <div class="input-group-prepend">
+              <span class="input-group-text">@</span>
+            </div>
+            <input type="text" placeholder="Username" class="form-control" />
+          </div>
+          <div class="input-group">
+            <input type="text" class="form-control" />
+            <div class="input-group-append">
+              <span class="input-group-text">.00</span>
+              </div>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text">$</span>
+                </div>
+                <input type="text" class="form-control">
+                <div class="input-group-append">
+                  <span class="input-group-text">.00</span>
+                </div>
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <input type="checkbox">
+                  </div>
+                </div>
+                <input type="text" class="form-control">
+              </div>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <div class="input-group-text">
+                    <input type="radio">
+                  </div>
+                </div>
+                <input type="text" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <em>Input & Button Groups</em>
+        <hr class="my-4">
+      </div>
+      <div class="row justify-content-end">
+        <div class="col-lg-10">
+          <div class="input-group">
+            <input type="text" class="form-control" />
+            <div class="input-group-append">
+              <button type="button" class="btn btn-primary">Go!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+
+  </div>
+
+  <!-- Optional JavaScript -->
+
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script 
+    src="https://code.jquery.com/jquery-3.4.1.slim.min.js" 
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" 
+    crossorigin="anonymous"></script>
+  <script 
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" 
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" 
+    crossorigin="anonymous"></script>
+  <script 
+    src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" 
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
+    crossorigin="anonymous"></script>
+</body>
+  
+</html>
